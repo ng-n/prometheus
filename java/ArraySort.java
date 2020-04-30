@@ -6,19 +6,16 @@ public class ArraySort {
 		int length = array.length;
 		int tmp;
 
-		for(int i = 0; i < length; ++i){
-            for(int j = 0; j < length; ++j){
+	for(int i = 0; i < length; ++i)
+            for(int j = 0; j < length; ++j)
                 if(array[i] < array[j]){
                     tmp = array[i];
                     array[i] = array[j];
                     array[j] = tmp;
                 }
-            }
-        }
-        
-		for (int i = 0; i < length; i++) {
-			System.out.print(array[i] + " ");
-		}
+            
+        for (int i = 0; i < length; i++) 
+		System.out.print(array[i] + " ");	
 	}
 }        
 		
